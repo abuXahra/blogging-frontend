@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body {
+  color: #222
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+main {
+  padding: 10px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+header nav {
+  display: flex;
+  gap: 15px
+}
+
+.post {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.post-image {
+  width: 50%;
+  height: 200px;
+}
+
+.post-text {
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+
 }
 
-.App-link {
-  color: #61dafb;
+.post-text h2 {
+  margin: 0;
+  font-size: 1.2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-text .info {
+  margin: 0;
+  font-size: 10px;
+  color: gray;
+}
+
+.post-text .info a.author {
+
+  font-weight: bold;
+  color: black;
+}
+
+
+.post-text .info a {
+  margin-right: 10px;
+  color: gray;
+  text-decoration: none;
+}
+
+.post-text .summary {
+  line-height: 1.5rem;
+  margin: 0;
 }
